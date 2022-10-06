@@ -1,0 +1,24 @@
+@import './colors.scss';
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Space Mono', monospace;
+}
+
+.heading {
+	display: flex;
+	h1 {
+		font-size: 30px;
+	}
+
+	.light-mode {
+		display: none;
+	}
+}
