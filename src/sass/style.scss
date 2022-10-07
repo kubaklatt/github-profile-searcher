@@ -18,7 +18,7 @@ html {
 	display: flex;
 	flex-direction: column;
 	margin: 30px;
-	gap: 10px;
+	gap: 25px;
 }
 
 .heading {
@@ -36,6 +36,16 @@ html {
 	padding: 10px;
 	border-radius: 10px;
 	background-color: $main-color;
+	box-shadow: 1px 1px 9px -1px rgba(0, 0, 0, 0.54);
+	-webkit-box-shadow: 1px 1px 9px -1px rgba(0, 0, 0, 0.54);
+	-moz-box-shadow: 1px 1px 9px -1px rgba(0, 0, 0, 0.54);
+
+	.input {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 20px;
+	}
 
 	img {
 		width: 20px;
@@ -51,5 +61,216 @@ html {
 		cursor: pointer;
 		background-color: $button-color;
 		color: #ffffff;
+	}
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	gap: 20px;
+	border-radius: 10px;
+	background-color: $main-color;
+	box-shadow: 1px 1px 9px -1px rgba(0, 0, 0, 0.54);
+	-webkit-box-shadow: 1px 1px 9px -1px rgba(0, 0, 0, 0.54);
+	-moz-box-shadow: 1px 1px 9px -1px rgba(0, 0, 0, 0.54);
+
+	.main-information {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 30px;
+
+		.github-avatar {
+			img {
+				border-radius: 50%;
+				height: 100px;
+				width: 100px;
+				object-fit: cover;
+				object-position: center;
+			}
+		}
+
+		.info {
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+
+			h2 {
+				font-size: 18px;
+			}
+
+			h3 {
+				font-size: 15px;
+				color: $button-color;
+			}
+
+			h4 {
+				font-size: 15px;
+			}
+		}
+	}
+
+	.bio {
+		line-height: 25px;
+		p {
+			font-size: 14px;
+		}
+	}
+
+	.stats {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 15px;
+		border-radius: 10px;
+		padding: 15px;
+		text-align: center;
+		background-color: $primary-color;
+
+		.repos {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+
+			p:nth-child(2) {
+				font-weight: 700;
+			}
+		}
+
+		.followers {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+
+			p:nth-child(2) {
+				font-weight: 700;
+			}
+		}
+
+		.following {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+
+			p:nth-child(2) {
+				font-weight: 700;
+			}
+		}
+	}
+
+	.more-info {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+
+		img {
+			width: 25px;
+		}
+
+		.location {
+			display: flex;
+			gap: 10px;
+		}
+
+		.website {
+			display: flex;
+			gap: 10px;
+		}
+
+		.twitter {
+			display: flex;
+			gap: 10px;
+		}
+
+		.company {
+			display: flex;
+			gap: 10px;
+		}
+	}
+}
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 15px;
+
+	img {
+		width: 15px;
+	}
+}
+
+@media (max-width: 320px) {
+	.container {
+		.search-bar {
+			button {
+				padding: 6px;
+			}
+		}
+
+		.stats {
+			font-size: 13px;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		.heading {
+			h1 {
+				font-size: 24px;
+			}
+		}
+		.main-information {
+			gap: 50px;
+
+			.github-avatar {
+				img {
+					height: 150px;
+					width: 150px;
+				}
+			}
+			.info {
+				gap: 10px;
+
+				h2 {
+					font-size: 23px;
+				}
+
+				h3 {
+					font-size: 18px;
+				}
+
+				h4 {
+					font-size: 18px;
+				}
+			}
+		}
+
+		.bio {
+			p {
+				font-size: 17px;
+			}
+		}
+
+		.search-bar {
+			button {
+				font-size: 14px;
+				padding: 15px 30px;
+			}
+		}
+		.stats {
+			justify-content: space-evenly;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+		margin: 50px 300px;
+		gap: 25px;
 	}
 }
