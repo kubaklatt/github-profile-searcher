@@ -64,6 +64,15 @@ html {
 	}
 }
 
+.alert {
+	visibility: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: red;
+	font-weight: 700;
+}
+
 .main {
 	display: flex;
 	flex-direction: column;

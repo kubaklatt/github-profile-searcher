@@ -25,25 +25,29 @@
         <div class="search-bar">
             <div class="input">
                 <img src="./dist/img/magnifying-glass-svgrepo-com.svg" alt="">
-                <input type="text" placeholder="Enter GitHub username...">
+                <input type="text" id="input" placeholder="Enter GitHub username...">
             </div>
-            <button>Search</button>
+            <button id="search">Search</button>
         </div>
 
+        <div class="alert">
+            <p class="alert-text">user not found</p>
+        </div>
 
         <div class="main">
             <div class="main-information">
                 <div class="github-avatar">
-                    <img src="./dist/img/octocat.png" alt="">
+                    <img class="avatar" src="./dist/img/octocat.png" alt="">
                 </div>
                 <div class="info">
-                    <h2>The Octocat</h2>
-                    <h3>@octocat</h3>
-                    <h4>Joined 25 Jan 2011</h4>
+                    <h2 class="name">The Octocat</h2>
+                    <h3 class="login">@octocat</h3>
+                    <h4 class="date">Joined 02/05/2017</h4>
                 </div>
             </div>
             <div class="bio">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet repudiandae iusto, delectus
+                <p class="bio-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet repudiandae
+                    iusto, delectus
                     debitis
                     officiis quia ex dolorem qui velit tenetur numquam blanditiis necessitatibus eos sint eligendi
                     harum
@@ -52,33 +56,33 @@
             <div class="stats">
                 <div class="repos">
                     <p>Repos</p>
-                    <p>8</p>
+                    <p class="repos-amount">8</p>
                 </div>
                 <div class="followers">
                     <p>Followers</p>
-                    <p>3938</p>
+                    <p class="followers-amount">3938</p>
                 </div>
                 <div class="following">
                     <p>Following</p>
-                    <p>9</p>
+                    <p class="following-amount">9</p>
                 </div>
             </div>
             <div class="more-info">
                 <div class="location">
                     <img src="./dist/img/location-pin-svgrepo-com.svg" alt="">
-                    <p>San Francisco</p>
+                    <p class="user-location">San Francisco</p>
                 </div>
                 <div class="website">
                     <img src="./dist/img/link-svgrepo-com.svg" alt="">
-                    <p>https://github.blog</p>
+                    <p class="user-website">https://github.blog</p>
                 </div>
                 <div class="twitter">
                     <img src="./dist/img/twitter-svgrepo-com.svg" alt="">
-                    <p>Not Available</p>
+                    <p class="user-twitter">Not Available</p>
                 </div>
                 <div class="company">
                     <img src="./dist/img/building-svgrepo-com.svg" alt="">
-                    <p>@github</p>
+                    <p class="user-company">@github</p>
                 </div>
             </div>
         </div>
