@@ -279,7 +279,9 @@ html {
 	.container {
 		display: flex;
 		flex-direction: column;
-		margin: 50px 300px;
+		width: 100%;
+		max-width: 700px;
+		margin: 25px auto;
 		gap: 25px;
 	}
 }
