@@ -15,7 +15,7 @@ const userTwitter = document.querySelector('.user-twitter')
 const userCompany = document.querySelector('.user-company')
 let userName
 
-searchBtn.addEventListener('click', () => {
+function findUser() {
 	userName = input.value
 	fetch('https://api.github.com/users/' + userName)
 		.then(res => {
@@ -49,4 +49,11 @@ searchBtn.addEventListener('click', () => {
 			console.error(error)
 			alertText.style.visibility = 'visible'
 		})
+}
+
+searchBtn.addEventListener('click', findUser)
+input.addEventListener('keypress', function (e) {
+	if (e.key === 'Enter') {
+		findUser()
+	}
 })
